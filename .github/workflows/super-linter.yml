@@ -9,8 +9,10 @@ name: Lint Code Base
 on:
   push:
     branches: [ main ]
+    paths-ignore: '**/.cs'
   pull_request:
     branches: [ main ]
+    paths-ignore: '**/.cs'    
 jobs:
   run-lint:
     runs-on: ubuntu-latest
